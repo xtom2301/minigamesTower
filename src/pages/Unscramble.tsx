@@ -1,5 +1,13 @@
+import { BackButton, Header } from "../components";
+
 const Unscramble = () => {
-  return <div>Unscramble</div>;
+  return (
+    <div>
+      <Header />
+
+      <BackButton />
+    </div>
+  );
 };
 
 export default Unscramble;

@@ -1,5 +1,12 @@
+import { BackButton, Header } from "../components";
+
 const ColorGuesser = () => {
-  return <div>ColorGuesser</div>;
+  return (
+    <div>
+      <Header />
+      <BackButton />
+    </div>
+  );
 };
 
 export default ColorGuesser;
