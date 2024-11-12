@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { Home } from "./pages";
+import { ColorGuesser, Home, Unscramble } from "./pages";
 
 const App = () => {
   return (
@@ -9,6 +9,8 @@ const App = () => {
         <div className="md:max-w-screen-lg mx-auto">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/color-guesser" element={<ColorGuesser />} />
+            <Route path="/unscramble" element={<Unscramble />} />
           </Routes>
         </div>
       </Router>
