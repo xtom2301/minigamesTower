@@ -1,10 +1,8 @@
-import { BackButton, Header } from "../components";
+import { BackButton } from "../components";
 
 const Unscramble = () => {
   return (
     <div>
-      <Header />
-      <div>test für git email</div>
       <BackButton />
     </div>
   );
