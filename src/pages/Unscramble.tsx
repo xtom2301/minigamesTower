@@ -28,6 +28,7 @@ const Unscramble = () => {
       setInput("");
       getNewWord();
       setUnscrambleScore((prev) => prev + 1);
+      setAttempts(3);
     } else {
       setAttempts(attempts - 1);
       setInput("");
@@ -59,10 +60,14 @@ const Unscramble = () => {
       <BackButton />
       <div className="fixed top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[300px] sm:w-[600px] flex flex-col items-center">
         <Score game="unscramble" />
-        <div className="text-2xl text-gray-600">Attempts left: {attempts}</div>
-        <div className="text-6xl text-gray-600 my-10">{currentWord}</div>
+        <div className="text-2xl text-gray-600 dark:text-white">
+          Attempts left: {attempts}
+        </div>
+        <div className="text-6xl text-gray-600 my-10 dark:text-white">
+          {currentWord}
+        </div>
         <input
-          className="w-3/4 p-4 rounded-md text-gray-600 text-center border-2 border-gray-600 focus:outline-none focus:border-gray-800"
+          className="w-3/4 p-4 rounded-md text-gray-600 text-center border-2 border-gray-600 focus:outline-none focus:border-gray-800 "
           placeholder="Enter your answer"
           type="text"
           value={input}

@@ -13,9 +13,11 @@ const StartGame = ({
     <div>
       <div className="fixed top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[380px] flex flex-col items-center">
         {lost && (
-          <h1 className="mb-10 text-xl sm:text-2xl text-gray-600">
+          <h1 className="mb-10 text-xl sm:text-2xl text-gray-600 dark:text-white">
             You lost, your score was:
-            <span className="font-bold text-black"> {score}</span>
+            <span className="font-bold text-black dark:text-white">
+              {score}
+            </span>
           </h1>
         )}
 
