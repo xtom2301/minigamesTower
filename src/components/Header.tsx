@@ -3,7 +3,7 @@ import { useDarkmode } from "../store/store";
 const Header = () => {
   const { darkmode, setDarkmode } = useDarkmode();
   return (
-    <div className="flex flex-col gap-4 items-center border-y border-gray-500 pb-8">
+    <div className="flex flex-col gap-4 items-center border-b border-gray-500 pb-8">
       <div className="mt-8 text-center flex justify-center items-center gap-12">
         <h1 className="text-gray-600 md:text-6xl font-bold text-2xl dark:text-white">
           Minigames-Tower

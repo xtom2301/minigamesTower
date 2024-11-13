@@ -11,7 +11,7 @@ const Home = () => {
             <Link
               to={game.path}
               key={game.id}
-              className="border border-gray-500 p-4 w-full h-32 flex justify-center items-center md:text-4xl text-2xl rounded-full hover:bg-gray-100 transition-colors dark:hover:bg-gray-700 dark:text-white"
+              className="border border-gray-500 p-4 w-full h-32 flex justify-center items-center md:text-4xl text-2xl rounded-full hover:bg-gray-100  dark:hover:bg-gray-700 dark:text-white"
             >
               {game.name}
             </Link>
