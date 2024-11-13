@@ -49,7 +49,7 @@ const ColorGuesser = () => {
     <div>
       <BackButton />
       <div className="fixed top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[300px] sm:w-[600px]">
-        <Score />
+        <Score game="colorGuesser" />
         <div
           className="w-full h-96 rounded-2xl"
           style={{ backgroundColor: color }}
